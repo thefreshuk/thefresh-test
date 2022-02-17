@@ -1,0 +1,43 @@
+version: '2.4'
+
+services:
+  postgres:
+    image: postgres
+    restart: always
+    environment:
+      POSTGRES_USER: app
+      POSTGRES_DB: app
+      POSTGRES_PASSWORD: secret
+
+  redis:
+    image: redis
+    restart: always
+
+  api:
+    depends_on:
+      - postgres
+      - redis
+    restart: unless-stopped
+    env_file: ./projects/api/.env
+    build:
+      context: ./projects/api
+      dockerfile: Dockerfile
+    volumes:
+      - ./projects/api/app:/var/www/app/
+      - ./projects/api/config:/var/www/config/
+      - ./projects/api/tests:/var/www/tests/
+      - ./projects/api/database:/var/www/database/
+      - ./projects/api/resources:/var/www/resources/
+      - ./projects/api/public:/var/www/public/
+      - ./projects/api/routes:/var/www/routes/
+      - ./projects/api/composer.lock:/var/www/composer.lock
+      - ./projects/api/composer.json:/var/www/composer.json
+
+  nginx:
+    image: nginx:alpine
+    restart: unless-stopped
+    ports:
+      - 8000:80
+    volumes:
+      - ./projects/api/public:/var/www/public/
+      - ./conf/nginx:/etc/nginx/conf.d/
