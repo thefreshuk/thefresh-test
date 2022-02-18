@@ -56,8 +56,6 @@ reduces the risk to you:
 
 ## Exercises
 
-1. Provide considerations
-
 Choose a single task and:
 
 1. Understand the user stories
