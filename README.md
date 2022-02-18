@@ -27,6 +27,8 @@ reduces the risk to you:
 2. We don't want you to rush or go overboard. Work at your own pace, don't rush
    or be a perfectionist. We understand scope can force certain decisions - take
    those decisions and explain why
+3. We don't expect you to complete everything too. As above, we want you to show
+   us where you draw the line on dropping standards to get things over the line
 3. We will give you something relevant to our domain. We're not going to ask you
    to rotate a binary tree or implement A* path finding. These exercises are
    things you could work on in an interation
@@ -38,7 +40,18 @@ reduces the risk to you:
    Ghosting is a serious problem in recruitment and you always deserve to know
    where you stand, **no matter what**
 
+## Prerequisites
+
+You will need these installed to use the provided development environment:
+
+1. Docker for Desktop (or equivalent if Linux)
+2. Node
+3. Yarn
+4. PHP 8.0+
+
 ## Instructions
+
+What to do:
 
 1. Choose an exercise
 2. Create a new private repository for your work and add [James
@@ -55,6 +68,16 @@ reduces the risk to you:
 5. Let us know when you're done (email james@thefreshuk.com)
 6. Wait and hear back from us - usually this will be the same day or next
    working day (we don't work weekends!)
+
+Using the development environment:
+
+1. Use `docker-compose up --detach` to boot the API and infrastructure
+2. Run the following to start the UI:
+
+```
+cd projects/ui
+yarn start
+```
 
 ## Exercises
 
