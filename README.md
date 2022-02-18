@@ -39,6 +39,9 @@ reduces the risk to you:
 6. We will always give honest, constructive feedback no matter the outcome.
    Ghosting is a serious problem in recruitment and you always deserve to know
    where you stand, **no matter what**
+7. We don't want a free lunch. Although these tasks are relevant to what you
+   will be working on, we don't expect you to work for free and we **will not**
+   use any of your code from these exercises
 
 ## Prerequisites
 
