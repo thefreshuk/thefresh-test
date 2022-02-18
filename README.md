@@ -1,5 +1,7 @@
 # Leadflo Take-home Challenge
 
+![](./.assets/process.png)
+
 You're probably here because we've been discussing a possible role at Leadflo.
 If that's the case, congrats!
 
