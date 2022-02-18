@@ -1,9 +1,9 @@
-# Leadflo Take-home Challenge
+# The Fresh Take-home Challenge
 
 ![](./.assets/process.png)
 
-You're probably here because we've been discussing a possible role at Leadflo.
-If that's the case, congrats!
+You're probably here because we've been discussing a possible role at The Fresh
+working on Leadflo. If that's the case, congrats!
 
 To move forward, we need to understand how you work and, crucially, how we work
 together. As such, this project includes a set of take-home challenges that you
@@ -88,6 +88,9 @@ Given that we will only read opening hours and not depend on it (e.g with
 foreign keys), this may provide opportunities to simplify persistence. Deleting
 all opening hours and re-inserting them is a viable option.
 
+Don't worry about tenancy here. Pretend we're using a single database per
+tenant.
+
 ### Exercise B: Treatments
 
 As part of their business, private dental practices sell treatments to patients.
@@ -108,3 +111,6 @@ stage within it and eventually a customer lifetime value.
 Given that this **will** be depended on in other parts of the application, we
 must careful how we persist treatments. Deleting them all and re-inserting them
 is **not** an option here.
+
+Don't worry about tenancy here. Pretend we're using a single database per
+tenant.
